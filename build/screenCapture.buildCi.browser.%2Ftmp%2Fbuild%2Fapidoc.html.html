@@ -1,0 +1,2252 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/monteslu/bean-io#readme">bean-io (v0.3.2)</a>
+</h1>
+<h4>Punchthrough LightBlue Bean IO</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bean-io">module bean-io</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board">
+            function <span class="apidocSignatureSpan">bean-io.</span>Board
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_">
+            function <span class="apidocSignatureSpan">bean-io.</span>Board.super_
+            <span class="apidocSignatureSpan">(port, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bean-io.</span>Board.super_.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bean-io.Board">module bean-io.Board</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.Board">
+            function <span class="apidocSignatureSpan">bean-io.</span>Board
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_">
+            function <span class="apidocSignatureSpan">bean-io.Board.</span>super_
+            <span class="apidocSignatureSpan">(port, options, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bean-io.Board.super_">module bean-io.Board.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.super_">
+            function <span class="apidocSignatureSpan">bean-io.Board.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.Board">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.</span>Board
+            <span class="apidocSignatureSpan">(port, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bean-io.Board.super_.</span>MIDI_RESPONSE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bean-io.Board.super_.</span>SYSEX_RESPONSE</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bean-io.Board.super_.prototype">module bean-io.Board.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype._sendOneWireRequest">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>_sendOneWireRequest
+            <span class="apidocSignatureSpan">(pin, subcommand, device, numBytesToRead, correlationId, delay, dataToWrite, event, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype._sendOneWireSearch">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>_sendOneWireSearch
+            <span class="apidocSignatureSpan">(type, event, pin, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.analogRead">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>analogRead
+            <span class="apidocSignatureSpan">(pin, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.analogWrite">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>analogWrite
+            <span class="apidocSignatureSpan">(pin, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.digitalRead">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>digitalRead
+            <span class="apidocSignatureSpan">(pin, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.digitalWrite">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>digitalWrite
+            <span class="apidocSignatureSpan">(pin, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.i2cConfig">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cConfig
+            <span class="apidocSignatureSpan">(delay)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.i2cRead">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cRead
+            <span class="apidocSignatureSpan">(address, register, bytesToRead, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.i2cReadOnce">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cReadOnce
+            <span class="apidocSignatureSpan">(address, register, bytesToRead, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.i2cWrite">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cWrite
+            <span class="apidocSignatureSpan">(address, registerOrData, inBytes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.i2cWriteReg">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cWriteReg
+            <span class="apidocSignatureSpan">(address, register, byte)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.pinMode">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>pinMode
+            <span class="apidocSignatureSpan">(pin, mode)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.pingRead">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>pingRead
+            <span class="apidocSignatureSpan">(opts, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.queryAnalogMapping">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>queryAnalogMapping
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.queryCapabilities">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>queryCapabilities
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.queryFirmware">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>queryFirmware
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.queryPinState">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>queryPinState
+            <span class="apidocSignatureSpan">(pin, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.reportAnalogPin">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>reportAnalogPin
+            <span class="apidocSignatureSpan">(pin, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.reportDigitalPin">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>reportDigitalPin
+            <span class="apidocSignatureSpan">(pin, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.reportVersion">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>reportVersion
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.reset">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>reset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendI2CConfig">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendI2CConfig
+            <span class="apidocSignatureSpan">(delay)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendI2CReadRequest">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendI2CReadRequest
+            <span class="apidocSignatureSpan">(address, numBytes, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendI2CWriteRequest">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendI2CWriteRequest
+            <span class="apidocSignatureSpan">(slaveAddress, bytes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireAlarmsSearch">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireAlarmsSearch
+            <span class="apidocSignatureSpan">(pin, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireConfig">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireConfig
+            <span class="apidocSignatureSpan">(pin, enableParasiticPower)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireDelay">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireDelay
+            <span class="apidocSignatureSpan">(pin, delay)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireRead">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireRead
+            <span class="apidocSignatureSpan">(pin, device, numBytesToRead, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireReset">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireReset
+            <span class="apidocSignatureSpan">(pin)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireSearch">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireSearch
+            <span class="apidocSignatureSpan">(pin, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireWrite">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireWrite
+            <span class="apidocSignatureSpan">(pin, device, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireWriteAndRead">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireWriteAndRead
+            <span class="apidocSignatureSpan">(pin, device, data, numBytesToRead, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.sendString">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendString
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.servoConfig">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>servoConfig
+            <span class="apidocSignatureSpan">(pin, min, max)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.servoWrite">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>servoWrite
+            <span class="apidocSignatureSpan">(pin, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.setSamplingInterval">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>setSamplingInterval
+            <span class="apidocSignatureSpan">(interval)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.stepperConfig">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>stepperConfig
+            <span class="apidocSignatureSpan">(deviceNum, type, stepsPerRev, dirOrMotor1Pin, stepOrMotor2Pin, motor3Pin, motor4Pin)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bean-io.Board.super_.prototype.stepperStep">
+            function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>stepperStep
+            <span class="apidocSignatureSpan">(deviceNum, direction, steps, speed, accel, decel, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bean-io" id="apidoc.module.bean-io">module bean-io</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board" id="apidoc.element.bean-io.Board">
+        function <span class="apidocSignatureSpan">bean-io.</span>Board
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Board(options){
+  options = options || {};
+
+  var self = this;
+  self.name = options.name || 'bean';
+  self.pins = []; //j5 is a bit aggressive on wanting this ready
+
+  Bean.is(function(peripheral) {
+      peripheral.advertisement.localName === self.name;
+    });
+
+  Bean.discover(function(bean){
+    self.connectedBean = bean;
+
+    bean.on("disconnect", function(){
+      process.exit();
+    });
+
+    bean.connectAndSetup(function(){
+
+      bean.unGate(function(){
+
+        //set color so you know its connected
+        self.connectedBean.setColor(new Buffer([0, 64, 64]), function(err){
+          console.log('set color', err);
+        });
+
+        setTimeout(function() {
+          self.connectedBean.setColor(new Buffer([0, 0, 0]), function(err){
+            console.log('set color off', err);
+          });
+        }.bind(this), 2500);
+
+
+        var serialPort = new SerialPort(self.connectedBean);
+
+        Board.super_.call(self, serialPort, {skipHandshake: true, samplingInterval:60000});
+        self.isReady = true;
+        self.emit('connect');
+
+      });
+
+    });
+
+  });
+
+
+  //turns off led before disconnecting
+  function exitHandler() {
+    if (self.connectedBean) {
+      console.log('Disconnecting from Device...');
+      self.connectedBean.setColor(new Buffer([0x00,0x00,0x00]), function(){
+        //does it hit here?
+        console.log('set color reply');
+        self.beanPeripheral.disconnect( function(){
+          console.log('disconnected');
+          process.exit();
+        });
+
+      });
+
+    } else {
+      process.exit();
+    }
+  }
+
+  process.on('SIGINT', exitHandler.bind({peripheral:self.beanPeripheral, connectedBean: self.connectedBean}));
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Blink an Led
+
+
+The "Hello World" of microcontroller programming:
+
+```js
+var beanio = require("bean-io");
+var board = new beanio.<span class="apidocCodeKeywordSpan">Board</span>({
+timeout: 30000 //optional - defaults to 30 seconds
+// uuid: 'myUuid' //optional - will use first bean found
+});
+
+board.on("ready", function() {
+console.log("CONNECTED");
+this.pinMode(13, this.MODES.OUTPUT);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_" id="apidoc.element.bean-io.Board.super_">
+        function <span class="apidocSignatureSpan">bean-io.</span>Board.super_
+        <span class="apidocSignatureSpan">(port, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Board.super_ = function (port, options, callback) {
+  Emitter.call(this);
+
+  if (typeof options === "function" || typeof options === "undefined") {
+    callback = options;
+    options = {};
+  }
+
+  var board = this;
+  var defaults = {
+    reportVersionTimeout: 5000,
+    serialport: {
+      baudRate: 57600,
+      bufferSize: 1
+    }
+  };
+
+  var settings = assign({}, defaults, options);
+
+  this.isReady = false;
+
+  this.MODES = {
+    INPUT: 0x00,
+    OUTPUT: 0x01,
+    ANALOG: 0x02,
+    PWM: 0x03,
+    SERVO: 0x04,
+    SHIFT: 0x05,
+    I2C: 0x06,
+    ONEWIRE: 0x07,
+    STEPPER: 0x08,
+    IGNORE: 0x7F,
+    UNKOWN: 0x10
+  };
+
+  this.I2C_MODES = {
+    WRITE: 0x00,
+    READ: 1,
+    CONTINUOUS_READ: 2,
+    STOP_READING: 3
+  };
+
+  this.STEPPER = {
+    TYPE: {
+      DRIVER: 1,
+      TWO_WIRE: 2,
+      FOUR_WIRE: 4
+    },
+    RUNSTATE: {
+      STOP: 0,
+      ACCEL: 1,
+      DECEL: 2,
+      RUN: 3
+    },
+    DIRECTION: {
+      CCW: 0,
+      CW: 1
+    }
+  };
+
+  this.HIGH = 1;
+  this.LOW = 0;
+  this.pins = [];
+  this.analogPins = [];
+  this.version = {};
+  this.firmware = {};
+  this.currentBuffer = [];
+  this.versionReceived = false;
+  this.name = "Firmata";
+
+  if (typeof port === "object") {
+    this.transport = port;
+  } else {
+    this.transport = new SerialPort(port, settings.serialport);
+  }
+
+  // For backward compat
+  this.sp = this.transport;
+
+  this.transport.on("open", function() {
+    this.emit("connect");
+  }.bind(this));
+
+  this.transport.on("error", function(string) {
+    if (typeof callback === "function") {
+      callback(string);
+    }
+  });
+
+  this.transport.on("data", function(data) {
+    var byt, cmd;
+
+    if (!this.versionReceived &amp;&amp; data[0] !== REPORT_VERSION) {
+      return;
+    } else {
+      this.versionReceived = true;
+    }
+
+    for (var i = 0; i &lt; data.length; i++) {
+      byt = data[i];
+      // we dont want to push 0 as the first byte on our buffer
+      if (this.currentBuffer.length === 0 &amp;&amp; byt === 0) {
+        continue;
+      } else {
+        this.currentBuffer.push(byt);
+
+        // [START_SYSEX, ... END_SYSEX]
+        if (this.currentBuffer[0] === START_SYSEX &amp;&amp;
+          SYSEX_RESPONSE[this.currentBuffer[1]] &amp;&amp;
+          this.currentBuffer[this.currentBuffer.length - 1] === END_SYSEX) {
+
+          SYSEX_RESPONSE[this.currentBuffer[1]](this);
+          this.currentBuffer.length = 0;
+        } else if (this.currentBuffer[0] !== START_SYSEX) {
+          // Check if data gets out of sync: first byte in buffer
+          // must be a valid command if not START_SYSEX
+          // Identify command on first byte
+          cmd = this.currentBuffer[0] &lt; 240 ? this.currentBuffer[0] &amp; 0xF0 : this.currentBuffer[0];
+
+          // Check if it is not a valid command
+          if (cmd !== REPORT_VERSION &amp;&amp; cmd !== ANALOG_MESSAGE &amp;&amp; cmd !== DIGITAL_MESSAGE) {
+            // console.log("OUT OF SYNC - CMD: "+cmd);
+            // Clean buffer
+            this.currentBuffer.length = 0;
+          }
+        }
+
+        // There are 3 bytes in the buffer and the first is not START_SYSEX:
+        // Might have a MIDI Command
+        if (this.currentBuffer.length === 3 &amp;&amp; this.currentBuffer[0] !== START_SYSEX) {
+          //commands under 0xF0 we have a multi byte command
+          if (this.currentBuffer[0] &lt; 240) {
+            cmd = this.currentBuffer[0] &amp; 0xF0;
+          } else {
+            cmd = this.currentBuffer[0];
+          }
+
+          if (MIDI_RESPONSE[cmd]) {
+            MIDI_RESPONSE[cmd](this);
+            this.currentBuffer.length = 0;
+          } else {
+            // A bad serial read must have happened.
+            // Reseting the buffer will allow recovery.
+            this.currentBuffer.length = 0;
+          }
+        }
+      }
+    }
+  }.bind(this));
+
+  // if we have not received the version within the alotted
+  // time specified by the reportVersionTimeout (user or default),
+  // then send an explicit request for it.
+  this.reportVersionTimeoutId = setTimeout(function() {
+    if (this.versionReceived === false) {
+      this.reportVersion(function() {});
+      this.queryFirmware(function() {});
+    }
+  }.bind(this), settings.r ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bean-io.Board" id="apidoc.module.bean-io.Board">module bean-io.Board</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.Board" id="apidoc.element.bean-io.Board.Board">
+        function <span class="apidocSignatureSpan">bean-io.</span>Board
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Board(options){
+  options = options || {};
+
+  var self = this;
+  self.name = options.name || 'bean';
+  self.pins = []; //j5 is a bit aggressive on wanting this ready
+
+  Bean.is(function(peripheral) {
+      peripheral.advertisement.localName === self.name;
+    });
+
+  Bean.discover(function(bean){
+    self.connectedBean = bean;
+
+    bean.on("disconnect", function(){
+      process.exit();
+    });
+
+    bean.connectAndSetup(function(){
+
+      bean.unGate(function(){
+
+        //set color so you know its connected
+        self.connectedBean.setColor(new Buffer([0, 64, 64]), function(err){
+          console.log('set color', err);
+        });
+
+        setTimeout(function() {
+          self.connectedBean.setColor(new Buffer([0, 0, 0]), function(err){
+            console.log('set color off', err);
+          });
+        }.bind(this), 2500);
+
+
+        var serialPort = new SerialPort(self.connectedBean);
+
+        Board.super_.call(self, serialPort, {skipHandshake: true, samplingInterval:60000});
+        self.isReady = true;
+        self.emit('connect');
+
+      });
+
+    });
+
+  });
+
+
+  //turns off led before disconnecting
+  function exitHandler() {
+    if (self.connectedBean) {
+      console.log('Disconnecting from Device...');
+      self.connectedBean.setColor(new Buffer([0x00,0x00,0x00]), function(){
+        //does it hit here?
+        console.log('set color reply');
+        self.beanPeripheral.disconnect( function(){
+          console.log('disconnected');
+          process.exit();
+        });
+
+      });
+
+    } else {
+      process.exit();
+    }
+  }
+
+  process.on('SIGINT', exitHandler.bind({peripheral:self.beanPeripheral, connectedBean: self.connectedBean}));
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Blink an Led
+
+
+The "Hello World" of microcontroller programming:
+
+```js
+var beanio = require("bean-io");
+var board = new beanio.<span class="apidocCodeKeywordSpan">Board</span>({
+timeout: 30000 //optional - defaults to 30 seconds
+// uuid: 'myUuid' //optional - will use first bean found
+});
+
+board.on("ready", function() {
+console.log("CONNECTED");
+this.pinMode(13, this.MODES.OUTPUT);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_" id="apidoc.element.bean-io.Board.super_">
+        function <span class="apidocSignatureSpan">bean-io.Board.</span>super_
+        <span class="apidocSignatureSpan">(port, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (port, options, callback) {
+  Emitter.call(this);
+
+  if (typeof options === "function" || typeof options === "undefined") {
+    callback = options;
+    options = {};
+  }
+
+  var board = this;
+  var defaults = {
+    reportVersionTimeout: 5000,
+    serialport: {
+      baudRate: 57600,
+      bufferSize: 1
+    }
+  };
+
+  var settings = assign({}, defaults, options);
+
+  this.isReady = false;
+
+  this.MODES = {
+    INPUT: 0x00,
+    OUTPUT: 0x01,
+    ANALOG: 0x02,
+    PWM: 0x03,
+    SERVO: 0x04,
+    SHIFT: 0x05,
+    I2C: 0x06,
+    ONEWIRE: 0x07,
+    STEPPER: 0x08,
+    IGNORE: 0x7F,
+    UNKOWN: 0x10
+  };
+
+  this.I2C_MODES = {
+    WRITE: 0x00,
+    READ: 1,
+    CONTINUOUS_READ: 2,
+    STOP_READING: 3
+  };
+
+  this.STEPPER = {
+    TYPE: {
+      DRIVER: 1,
+      TWO_WIRE: 2,
+      FOUR_WIRE: 4
+    },
+    RUNSTATE: {
+      STOP: 0,
+      ACCEL: 1,
+      DECEL: 2,
+      RUN: 3
+    },
+    DIRECTION: {
+      CCW: 0,
+      CW: 1
+    }
+  };
+
+  this.HIGH = 1;
+  this.LOW = 0;
+  this.pins = [];
+  this.analogPins = [];
+  this.version = {};
+  this.firmware = {};
+  this.currentBuffer = [];
+  this.versionReceived = false;
+  this.name = "Firmata";
+
+  if (typeof port === "object") {
+    this.transport = port;
+  } else {
+    this.transport = new SerialPort(port, settings.serialport);
+  }
+
+  // For backward compat
+  this.sp = this.transport;
+
+  this.transport.on("open", function() {
+    this.emit("connect");
+  }.bind(this));
+
+  this.transport.on("error", function(string) {
+    if (typeof callback === "function") {
+      callback(string);
+    }
+  });
+
+  this.transport.on("data", function(data) {
+    var byt, cmd;
+
+    if (!this.versionReceived &amp;&amp; data[0] !== REPORT_VERSION) {
+      return;
+    } else {
+      this.versionReceived = true;
+    }
+
+    for (var i = 0; i &lt; data.length; i++) {
+      byt = data[i];
+      // we dont want to push 0 as the first byte on our buffer
+      if (this.currentBuffer.length === 0 &amp;&amp; byt === 0) {
+        continue;
+      } else {
+        this.currentBuffer.push(byt);
+
+        // [START_SYSEX, ... END_SYSEX]
+        if (this.currentBuffer[0] === START_SYSEX &amp;&amp;
+          SYSEX_RESPONSE[this.currentBuffer[1]] &amp;&amp;
+          this.currentBuffer[this.currentBuffer.length - 1] === END_SYSEX) {
+
+          SYSEX_RESPONSE[this.currentBuffer[1]](this);
+          this.currentBuffer.length = 0;
+        } else if (this.currentBuffer[0] !== START_SYSEX) {
+          // Check if data gets out of sync: first byte in buffer
+          // must be a valid command if not START_SYSEX
+          // Identify command on first byte
+          cmd = this.currentBuffer[0] &lt; 240 ? this.currentBuffer[0] &amp; 0xF0 : this.currentBuffer[0];
+
+          // Check if it is not a valid command
+          if (cmd !== REPORT_VERSION &amp;&amp; cmd !== ANALOG_MESSAGE &amp;&amp; cmd !== DIGITAL_MESSAGE) {
+            // console.log("OUT OF SYNC - CMD: "+cmd);
+            // Clean buffer
+            this.currentBuffer.length = 0;
+          }
+        }
+
+        // There are 3 bytes in the buffer and the first is not START_SYSEX:
+        // Might have a MIDI Command
+        if (this.currentBuffer.length === 3 &amp;&amp; this.currentBuffer[0] !== START_SYSEX) {
+          //commands under 0xF0 we have a multi byte command
+          if (this.currentBuffer[0] &lt; 240) {
+            cmd = this.currentBuffer[0] &amp; 0xF0;
+          } else {
+            cmd = this.currentBuffer[0];
+          }
+
+          if (MIDI_RESPONSE[cmd]) {
+            MIDI_RESPONSE[cmd](this);
+            this.currentBuffer.length = 0;
+          } else {
+            // A bad serial read must have happened.
+            // Reseting the buffer will allow recovery.
+            this.currentBuffer.length = 0;
+          }
+        }
+      }
+    }
+  }.bind(this));
+
+  // if we have not received the version within the alotted
+  // time specified by the reportVersionTimeout (user or default),
+  // then send an explicit request for it.
+  this.reportVersionTimeoutId = setTimeout(function() {
+    if (this.versionReceived === false) {
+      this.reportVersion(function() {});
+      this.queryFirmware(function() {});
+    }
+  }.bind(this), settings.r ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bean-io.Board.super_" id="apidoc.module.bean-io.Board.super_">module bean-io.Board.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.super_" id="apidoc.element.bean-io.Board.super_.super_">
+        function <span class="apidocSignatureSpan">bean-io.Board.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.Board" id="apidoc.element.bean-io.Board.super_.Board">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.</span>Board
+        <span class="apidocSignatureSpan">(port, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Board = function (port, options, callback) {
+  Emitter.call(this);
+
+  if (typeof options === "function" || typeof options === "undefined") {
+    callback = options;
+    options = {};
+  }
+
+  var board = this;
+  var defaults = {
+    reportVersionTimeout: 5000,
+    serialport: {
+      baudRate: 57600,
+      bufferSize: 1
+    }
+  };
+
+  var settings = assign({}, defaults, options);
+
+  this.isReady = false;
+
+  this.MODES = {
+    INPUT: 0x00,
+    OUTPUT: 0x01,
+    ANALOG: 0x02,
+    PWM: 0x03,
+    SERVO: 0x04,
+    SHIFT: 0x05,
+    I2C: 0x06,
+    ONEWIRE: 0x07,
+    STEPPER: 0x08,
+    IGNORE: 0x7F,
+    UNKOWN: 0x10
+  };
+
+  this.I2C_MODES = {
+    WRITE: 0x00,
+    READ: 1,
+    CONTINUOUS_READ: 2,
+    STOP_READING: 3
+  };
+
+  this.STEPPER = {
+    TYPE: {
+      DRIVER: 1,
+      TWO_WIRE: 2,
+      FOUR_WIRE: 4
+    },
+    RUNSTATE: {
+      STOP: 0,
+      ACCEL: 1,
+      DECEL: 2,
+      RUN: 3
+    },
+    DIRECTION: {
+      CCW: 0,
+      CW: 1
+    }
+  };
+
+  this.HIGH = 1;
+  this.LOW = 0;
+  this.pins = [];
+  this.analogPins = [];
+  this.version = {};
+  this.firmware = {};
+  this.currentBuffer = [];
+  this.versionReceived = false;
+  this.name = "Firmata";
+
+  if (typeof port === "object") {
+    this.transport = port;
+  } else {
+    this.transport = new SerialPort(port, settings.serialport);
+  }
+
+  // For backward compat
+  this.sp = this.transport;
+
+  this.transport.on("open", function() {
+    this.emit("connect");
+  }.bind(this));
+
+  this.transport.on("error", function(string) {
+    if (typeof callback === "function") {
+      callback(string);
+    }
+  });
+
+  this.transport.on("data", function(data) {
+    var byt, cmd;
+
+    if (!this.versionReceived &amp;&amp; data[0] !== REPORT_VERSION) {
+      return;
+    } else {
+      this.versionReceived = true;
+    }
+
+    for (var i = 0; i &lt; data.length; i++) {
+      byt = data[i];
+      // we dont want to push 0 as the first byte on our buffer
+      if (this.currentBuffer.length === 0 &amp;&amp; byt === 0) {
+        continue;
+      } else {
+        this.currentBuffer.push(byt);
+
+        // [START_SYSEX, ... END_SYSEX]
+        if (this.currentBuffer[0] === START_SYSEX &amp;&amp;
+          SYSEX_RESPONSE[this.currentBuffer[1]] &amp;&amp;
+          this.currentBuffer[this.currentBuffer.length - 1] === END_SYSEX) {
+
+          SYSEX_RESPONSE[this.currentBuffer[1]](this);
+          this.currentBuffer.length = 0;
+        } else if (this.currentBuffer[0] !== START_SYSEX) {
+          // Check if data gets out of sync: first byte in buffer
+          // must be a valid command if not START_SYSEX
+          // Identify command on first byte
+          cmd = this.currentBuffer[0] &lt; 240 ? this.currentBuffer[0] &amp; 0xF0 : this.currentBuffer[0];
+
+          // Check if it is not a valid command
+          if (cmd !== REPORT_VERSION &amp;&amp; cmd !== ANALOG_MESSAGE &amp;&amp; cmd !== DIGITAL_MESSAGE) {
+            // console.log("OUT OF SYNC - CMD: "+cmd);
+            // Clean buffer
+            this.currentBuffer.length = 0;
+          }
+        }
+
+        // There are 3 bytes in the buffer and the first is not START_SYSEX:
+        // Might have a MIDI Command
+        if (this.currentBuffer.length === 3 &amp;&amp; this.currentBuffer[0] !== START_SYSEX) {
+          //commands under 0xF0 we have a multi byte command
+          if (this.currentBuffer[0] &lt; 240) {
+            cmd = this.currentBuffer[0] &amp; 0xF0;
+          } else {
+            cmd = this.currentBuffer[0];
+          }
+
+          if (MIDI_RESPONSE[cmd]) {
+            MIDI_RESPONSE[cmd](this);
+            this.currentBuffer.length = 0;
+          } else {
+            // A bad serial read must have happened.
+            // Reseting the buffer will allow recovery.
+            this.currentBuffer.length = 0;
+          }
+        }
+      }
+    }
+  }.bind(this));
+
+  // if we have not received the version within the alotted
+  // time specified by the reportVersionTimeout (user or default),
+  // then send an explicit request for it.
+  this.reportVersionTimeoutId = setTimeout(function() {
+    if (this.versionReceived === false) {
+      this.reportVersion(function() {});
+      this.queryFirmware(function() {});
+    }
+  }.bind(this), settings.r ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Blink an Led
+
+
+The "Hello World" of microcontroller programming:
+
+```js
+var beanio = require("bean-io");
+var board = new beanio.<span class="apidocCodeKeywordSpan">Board</span>({
+timeout: 30000 //optional - defaults to 30 seconds
+// uuid: 'myUuid' //optional - will use first bean found
+});
+
+board.on("ready", function() {
+console.log("CONNECTED");
+this.pinMode(13, this.MODES.OUTPUT);
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bean-io.Board.super_.prototype" id="apidoc.module.bean-io.Board.super_.prototype">module bean-io.Board.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype._sendOneWireRequest" id="apidoc.element.bean-io.Board.super_.prototype._sendOneWireRequest">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>_sendOneWireRequest
+        <span class="apidocSignatureSpan">(pin, subcommand, device, numBytesToRead, correlationId, delay, dataToWrite, event, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_sendOneWireRequest = function (pin, subcommand, device, numBytesToRead, correlationId, delay, dataToWrite, event, callback) {
+  var bytes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  if (device || numBytesToRead || correlationId || delay || dataToWrite) {
+    subcommand = subcommand | ONEWIRE_WITHDATA_REQUEST_BITS;
+  }
+
+  if (device) {
+    bytes.splice.apply(bytes, [0, 8].concat(device));
+  }
+
+  if (numBytesToRead) {
+    bytes[8] = numBytesToRead &amp; 0xFF;
+    bytes[9] = (numBytesToRead &gt;&gt; 8) &amp; 0xFF;
+  }
+
+  if (correlationId) {
+    bytes[10] = correlationId &amp; 0xFF;
+    bytes[11] = (correlationId &gt;&gt; 8) &amp; 0xFF;
+  }
+
+  if (delay) {
+    bytes[12] = delay &amp; 0xFF;
+    bytes[13] = (delay &gt;&gt; 8) &amp; 0xFF;
+    bytes[14] = (delay &gt;&gt; 16) &amp; 0xFF;
+    bytes[15] = (delay &gt;&gt; 24) &amp; 0xFF;
+  }
+
+  if (dataToWrite) {
+    dataToWrite.forEach(function(byte) {
+      bytes.push(byte);
+    });
+  }
+
+  var output = [START_SYSEX, ONEWIRE_DATA, subcommand, pin];
+  output = output.concat(Encoder7Bit.to7BitArray(bytes));
+  output.push(END_SYSEX);
+
+  this.transport.write(new Buffer(output));
+
+  if (event &amp;&amp; callback) {
+    this.once(event, callback);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype._sendOneWireSearch" id="apidoc.element.bean-io.Board.super_.prototype._sendOneWireSearch">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>_sendOneWireSearch
+        <span class="apidocSignatureSpan">(type, event, pin, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_sendOneWireSearch = function (type, event, pin, callback) {
+  this.transport.write(new Buffer([START_SYSEX, ONEWIRE_DATA, type, pin, END_SYSEX]));
+
+  var searchTimeout = setTimeout(function() {
+    callback(new Error("1-Wire device search timeout - are you running ConfigurableFirmata?"));
+  }, 5000);
+  this.once(event, function(devices) {
+    clearTimeout(searchTimeout);
+
+    callback(null, devices);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.analogRead" id="apidoc.element.bean-io.Board.super_.prototype.analogRead">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>analogRead
+        <span class="apidocSignatureSpan">(pin, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">analogRead = function (pin, callback) {
+  this.reportAnalogPin(pin, 1);
+  this.addListener("analog-read-" + pin, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.analogWrite" id="apidoc.element.bean-io.Board.super_.prototype.analogWrite">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>analogWrite
+        <span class="apidocSignatureSpan">(pin, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">analogWrite = function (pin, value) {
+  var data = [];
+
+  this.pins[pin].value = value;
+
+  if (pin &gt; 15) {
+    data[0] = START_SYSEX;
+    data[1] = EXTENDED_ANALOG;
+    data[2] = pin;
+    data[3] = value &amp; 0x7F;
+    data[4] = (value &gt;&gt; 7) &amp; 0x7F;
+
+    if (value &gt; 0x00004000) {
+      data[data.length] = (value &gt;&gt; 14) &amp; 0x7F;
+    }
+
+    if (value &gt; 0x00200000) {
+      data[data.length] = (value &gt;&gt; 21) &amp; 0x7F;
+    }
+
+    if (value &gt; 0x10000000) {
+      data[data.length] = (value &gt;&gt; 28) &amp; 0x7F;
+    }
+
+    data[data.length] = END_SYSEX;
+  } else {
+    data.push(ANALOG_MESSAGE | pin, value &amp; 0x7F, (value &gt;&gt; 7) &amp; 0x7F);
+  }
+
+  this.transport.write(new Buffer(data));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.digitalRead" id="apidoc.element.bean-io.Board.super_.prototype.digitalRead">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>digitalRead
+        <span class="apidocSignatureSpan">(pin, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">digitalRead = function (pin, callback) {
+  this.reportDigitalPin(pin, 1);
+  this.addListener("digital-read-" + pin, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.digitalWrite" id="apidoc.element.bean-io.Board.super_.prototype.digitalWrite">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>digitalWrite
+        <span class="apidocSignatureSpan">(pin, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">digitalWrite = function (pin, value) {
+  var port = Math.floor(pin / 8);
+  var portValue = 0;
+  this.pins[pin].value = value;
+  for (var i = 0; i &lt; 8; i++) {
+    if (this.pins[8 * port + i].value) {
+      portValue |= (1 &lt;&lt; i);
+    }
+  }
+  this.transport.write(new Buffer([DIGITAL_MESSAGE | port, portValue &amp; 0x7F, (portValue &gt;&gt; 7) &amp; 0x7F]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  console.log("CONNECTED");
+  this.pinMode(13, this.MODES.OUTPUT);
+
+  var byte = 0;
+
+  // This will "blink" the on board led
+  setInterval(function() {
+    this.<span class="apidocCodeKeywordSpan">digitalWrite</span>(13, (byte ^= 1));
+  }.bind(this), 500);
+});
+```
+
+### Johnny-Five IO Plugin
+
+Bean-IO can be used as an [IO Plugin](https://github.com/rwaldron/johnny-five/wiki/IO-Plugins) for [Johnny-Five](https://github.
+com/rwaldron/johnny-five):
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.i2cConfig" id="apidoc.element.bean-io.Board.super_.prototype.i2cConfig">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cConfig
+        <span class="apidocSignatureSpan">(delay)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">i2cConfig = function (delay) {
+  delay = delay || 0;
+
+  i2cActive.set(this, true);
+
+  i2cRequest(this,
+    new Buffer([
+      START_SYSEX,
+      I2C_CONFIG,
+      delay &amp; 0xFF, (delay &gt;&gt; 8) &amp; 0xFF,
+      END_SYSEX
+    ])
+  );
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.i2cRead" id="apidoc.element.bean-io.Board.super_.prototype.i2cRead">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cRead
+        <span class="apidocSignatureSpan">(address, register, bytesToRead, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">i2cRead = function (address, register, bytesToRead, callback) {
+
+  if (arguments.length === 3 &amp;&amp;
+      typeof register === "number" &amp;&amp;
+      typeof bytesToRead === "function") {
+    callback = bytesToRead;
+    bytesToRead = register;
+    register = null;
+  }
+
+  var event = "I2C-reply-" + address + "-";
+  var data = [
+    START_SYSEX,
+    I2C_REQUEST,
+    address,
+    this.I2C_MODES.CONTINUOUS_READ &lt;&lt; 3,
+  ];
+
+  if (register !== null) {
+    data.push(
+      register &amp; 0x7F, (register &gt;&gt; 7) &amp; 0x7F
+    );
+  } else {
+    register = 0;
+  }
+
+  event += register;
+
+  data.push(
+    bytesToRead &amp; 0x7F, (bytesToRead &gt;&gt; 7) &amp; 0x7F,
+    END_SYSEX
+  );
+
+  this.on(event, callback);
+
+  i2cRequest(this, new Buffer(data));
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.i2cReadOnce" id="apidoc.element.bean-io.Board.super_.prototype.i2cReadOnce">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cReadOnce
+        <span class="apidocSignatureSpan">(address, register, bytesToRead, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">i2cReadOnce = function (address, register, bytesToRead, callback) {
+
+  if (arguments.length === 3 &amp;&amp;
+      typeof register === "number" &amp;&amp;
+      typeof bytesToRead === "function") {
+    callback = bytesToRead;
+    bytesToRead = register;
+    register = null;
+  }
+
+  var event = "I2C-reply-" + address + "-";
+  var data = [
+    START_SYSEX,
+    I2C_REQUEST,
+    address,
+    this.I2C_MODES.READ &lt;&lt; 3,
+  ];
+
+  if (register !== null) {
+    data.push(
+      register &amp; 0x7F, (register &gt;&gt; 7) &amp; 0x7F
+    );
+  } else {
+    register = 0;
+  }
+
+  event += register;
+
+  data.push(
+    bytesToRead &amp; 0x7F, (bytesToRead &gt;&gt; 7) &amp; 0x7F,
+    END_SYSEX
+  );
+
+  this.once(event, callback);
+
+  i2cRequest(this, new Buffer(data));
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.i2cWrite" id="apidoc.element.bean-io.Board.super_.prototype.i2cWrite">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cWrite
+        <span class="apidocSignatureSpan">(address, registerOrData, inBytes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">i2cWrite = function (address, registerOrData, inBytes) {
+<span class="apidocCodeCommentSpan">  /**
+   * registerOrData:
+   * [... arbitrary bytes]
+   *
+   * or
+   *
+   * registerOrData, inBytes:
+   * command [, ...]
+   *
+   */
+</span>  var bytes;
+  var data = [
+    START_SYSEX,
+    I2C_REQUEST,
+    address,
+    this.I2C_MODES.WRITE &lt;&lt; 3
+  ];
+
+
+  // If i2cWrite was used for an i2cWriteReg call...
+  if (arguments.length === 3 &amp;&amp;
+      !Array.isArray(registerOrData) &amp;&amp;
+      !Array.isArray(inBytes)) {
+
+    return this.i2cWriteReg(address, registerOrData, inBytes);
+  }
+
+  // Fix arguments if called with Firmata.js API
+  if (arguments.length === 2) {
+    if (Array.isArray(registerOrData)) {
+      inBytes = registerOrData.slice();
+      registerOrData = inBytes.shift();
+    } else {
+      inBytes = [];
+    }
+  }
+
+  bytes = new Buffer([registerOrData].concat(inBytes));
+
+  for (var i = 0, length = bytes.length; i &lt; length; i++) {
+    data.push(
+      bytes[i] &amp; 0x7F, (bytes[i] &gt;&gt; 7) &amp; 0x7F
+    );
+  }
+
+  data.push(END_SYSEX);
+
+  i2cRequest(this, new Buffer(data));
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.i2cWriteReg" id="apidoc.element.bean-io.Board.super_.prototype.i2cWriteReg">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>i2cWriteReg
+        <span class="apidocSignatureSpan">(address, register, byte)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">i2cWriteReg = function (address, register, byte) {
+  i2cRequest(this,
+    new Buffer([
+      START_SYSEX,
+      I2C_REQUEST,
+      address,
+      this.I2C_MODES.WRITE &lt;&lt; 3,
+      // register
+      register &amp; 0x7F, (register &gt;&gt; 7) &amp; 0x7F,
+      // byte
+      byte &amp; 0x7F, (byte &gt;&gt; 7) &amp; 0x7F,
+      END_SYSEX
+    ])
+  );
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.pinMode" id="apidoc.element.bean-io.Board.super_.prototype.pinMode">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>pinMode
+        <span class="apidocSignatureSpan">(pin, mode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pinMode = function (pin, mode) {
+  this.pins[pin].mode = mode;
+  this.transport.write(new Buffer([PIN_MODE, pin, mode]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var board = new beanio.Board({
+timeout: 30000 //optional - defaults to 30 seconds
+// uuid: 'myUuid' //optional - will use first bean found
+});
+
+board.on("ready", function() {
+console.log("CONNECTED");
+this.<span class="apidocCodeKeywordSpan">pinMode</span>(13, this.MODES.OUTPUT);
+
+var byte = 0;
+
+// This will "blink" the on board led
+setInterval(function() {
+  this.digitalWrite(13, (byte ^= 1));
+}.bind(this), 500);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.pingRead" id="apidoc.element.bean-io.Board.super_.prototype.pingRead">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>pingRead
+        <span class="apidocSignatureSpan">(opts, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pingRead = function (opts, callback) {
+  var pin = opts.pin;
+  var value = opts.value;
+  var pulseOut = opts.pulseOut || 0;
+  var timeout = opts.timeout || 1000000;
+  var pulseOutArray = [
+    ((pulseOut &gt;&gt; 24) &amp; 0xFF), ((pulseOut &gt;&gt; 16) &amp; 0xFF), ((pulseOut &gt;&gt; 8) &amp; 0XFF), ((pulseOut &amp; 0xFF))
+  ];
+  var timeoutArray = [
+    ((timeout &gt;&gt; 24) &amp; 0xFF), ((timeout &gt;&gt; 16) &amp; 0xFF), ((timeout &gt;&gt; 8) &amp; 0XFF), ((timeout &amp; 0xFF))
+  ];
+  var data = [
+    START_SYSEX,
+    PING_READ,
+    pin,
+    value,
+    pulseOutArray[0] &amp; 0x7F, (pulseOutArray[0] &gt;&gt; 7) &amp; 0x7F,
+    pulseOutArray[1] &amp; 0x7F, (pulseOutArray[1] &gt;&gt; 7) &amp; 0x7F,
+    pulseOutArray[2] &amp; 0x7F, (pulseOutArray[2] &gt;&gt; 7) &amp; 0x7F,
+    pulseOutArray[3] &amp; 0x7F, (pulseOutArray[3] &gt;&gt; 7) &amp; 0x7F,
+    timeoutArray[0] &amp; 0x7F, (timeoutArray[0] &gt;&gt; 7) &amp; 0x7F,
+    timeoutArray[1] &amp; 0x7F, (timeoutArray[1] &gt;&gt; 7) &amp; 0x7F,
+    timeoutArray[2] &amp; 0x7F, (timeoutArray[2] &gt;&gt; 7) &amp; 0x7F,
+    timeoutArray[3] &amp; 0x7F, (timeoutArray[3] &gt;&gt; 7) &amp; 0x7F,
+    END_SYSEX
+  ];
+  this.transport.write(new Buffer(data));
+  this.once("ping-read-" + pin, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.queryAnalogMapping" id="apidoc.element.bean-io.Board.super_.prototype.queryAnalogMapping">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>queryAnalogMapping
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">queryAnalogMapping = function (callback) {
+  this.once("analog-mapping-query", callback);
+  this.transport.write(new Buffer([START_SYSEX, ANALOG_MAPPING_QUERY, END_SYSEX]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.queryCapabilities" id="apidoc.element.bean-io.Board.super_.prototype.queryCapabilities">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>queryCapabilities
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">queryCapabilities = function (callback) {
+  this.once("capability-query", callback);
+  this.transport.write(new Buffer([START_SYSEX, CAPABILITY_QUERY, END_SYSEX]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.queryFirmware" id="apidoc.element.bean-io.Board.super_.prototype.queryFirmware">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>queryFirmware
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">queryFirmware = function (callback) {
+  this.once("queryfirmware", callback);
+  this.transport.write(new Buffer([START_SYSEX, QUERY_FIRMWARE, END_SYSEX]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.queryPinState" id="apidoc.element.bean-io.Board.super_.prototype.queryPinState">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>queryPinState
+        <span class="apidocSignatureSpan">(pin, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">queryPinState = function (pin, callback) {
+  this.once("pin-state-" + pin, callback);
+  this.transport.write(new Buffer([START_SYSEX, PIN_STATE_QUERY, pin, END_SYSEX]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.reportAnalogPin" id="apidoc.element.bean-io.Board.super_.prototype.reportAnalogPin">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>reportAnalogPin
+        <span class="apidocSignatureSpan">(pin, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reportAnalogPin = function (pin, value) {
+  if (value === 0 || value === 1) {
+    this.pins[this.analogPins[pin]].report = value;
+    this.transport.write(new Buffer([REPORT_ANALOG | pin, value]));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.reportDigitalPin" id="apidoc.element.bean-io.Board.super_.prototype.reportDigitalPin">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>reportDigitalPin
+        <span class="apidocSignatureSpan">(pin, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reportDigitalPin = function (pin, value) {
+  var port = Math.floor(pin / 8);
+  if (value === 0 || value === 1) {
+    this.pins[pin].report = value;
+    this.transport.write(new Buffer([REPORT_DIGITAL | port, value]));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.reportVersion" id="apidoc.element.bean-io.Board.super_.prototype.reportVersion">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>reportVersion
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reportVersion = function (callback) {
+  this.once("reportversion", callback);
+  this.transport.write(new Buffer([REPORT_VERSION]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.reset" id="apidoc.element.bean-io.Board.super_.prototype.reset">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>reset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reset = function () {
+  this.transport.write(new Buffer([SYSTEM_RESET]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendI2CConfig" id="apidoc.element.bean-io.Board.super_.prototype.sendI2CConfig">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendI2CConfig
+        <span class="apidocSignatureSpan">(delay)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendI2CConfig = function (delay) {
+  return this.i2cConfig(delay);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendI2CReadRequest" id="apidoc.element.bean-io.Board.super_.prototype.sendI2CReadRequest">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendI2CReadRequest
+        <span class="apidocSignatureSpan">(address, numBytes, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendI2CReadRequest = function (address, numBytes, callback) {
+  i2cRequest(this,
+    new Buffer([
+      START_SYSEX,
+      I2C_REQUEST,
+      address,
+      this.I2C_MODES.READ &lt;&lt; 3,
+      numBytes &amp; 0x7F, (numBytes &gt;&gt; 7) &amp; 0x7F,
+      END_SYSEX
+    ])
+  );
+  this.once("I2C-reply-" + address + "-0" , callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendI2CWriteRequest" id="apidoc.element.bean-io.Board.super_.prototype.sendI2CWriteRequest">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendI2CWriteRequest
+        <span class="apidocSignatureSpan">(slaveAddress, bytes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendI2CWriteRequest = function (slaveAddress, bytes) {
+  var data = [];
+  bytes = bytes || [];
+
+  data.push(
+    START_SYSEX,
+    I2C_REQUEST,
+    slaveAddress,
+    this.I2C_MODES.WRITE &lt;&lt; 3
+  );
+
+  for (var i = 0, length = bytes.length; i &lt; length; i++) {
+    data.push(
+      bytes[i] &amp; 0x7F, (bytes[i] &gt;&gt; 7) &amp; 0x7F
+    );
+  }
+
+  data.push(END_SYSEX);
+
+  i2cRequest(this, new Buffer(data));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireAlarmsSearch" id="apidoc.element.bean-io.Board.super_.prototype.sendOneWireAlarmsSearch">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireAlarmsSearch
+        <span class="apidocSignatureSpan">(pin, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendOneWireAlarmsSearch = function (pin, callback) {
+  this._sendOneWireSearch(ONEWIRE_SEARCH_ALARMS_REQUEST, "1-wire-search-alarms-reply-" + pin, pin, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireConfig" id="apidoc.element.bean-io.Board.super_.prototype.sendOneWireConfig">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireConfig
+        <span class="apidocSignatureSpan">(pin, enableParasiticPower)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendOneWireConfig = function (pin, enableParasiticPower) {
+  this.transport.write(new Buffer([START_SYSEX, ONEWIRE_DATA, ONEWIRE_CONFIG_REQUEST, pin, enableParasiticPower ? 0x01 : 0x00, END_SYSEX
+]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireDelay" id="apidoc.element.bean-io.Board.super_.prototype.sendOneWireDelay">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireDelay
+        <span class="apidocSignatureSpan">(pin, delay)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendOneWireDelay = function (pin, delay) {
+  this._sendOneWireRequest(pin, ONEWIRE_DELAY_REQUEST_BIT, null, null, null, delay);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireRead" id="apidoc.element.bean-io.Board.super_.prototype.sendOneWireRead">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireRead
+        <span class="apidocSignatureSpan">(pin, device, numBytesToRead, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendOneWireRead = function (pin, device, numBytesToRead, callback) {
+  var correlationId = Math.floor(Math.random() * 255);
+  var readTimeout = setTimeout(function() {
+    callback(new Error("1-Wire device read timeout - are you running ConfigurableFirmata?"));
+  }, 5000);
+  this._sendOneWireRequest(pin, ONEWIRE_READ_REQUEST_BIT, device, numBytesToRead, correlationId, null, null, "1-wire-read-reply-" +
+correlationId, function(data) {
+    clearTimeout(readTimeout);
+
+    callback(null, data);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireReset" id="apidoc.element.bean-io.Board.super_.prototype.sendOneWireReset">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireReset
+        <span class="apidocSignatureSpan">(pin)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendOneWireReset = function (pin) {
+  this._sendOneWireRequest(pin, ONEWIRE_RESET_REQUEST_BIT);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireSearch" id="apidoc.element.bean-io.Board.super_.prototype.sendOneWireSearch">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireSearch
+        <span class="apidocSignatureSpan">(pin, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendOneWireSearch = function (pin, callback) {
+  this._sendOneWireSearch(ONEWIRE_SEARCH_REQUEST, "1-wire-search-reply-" + pin, pin, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireWrite" id="apidoc.element.bean-io.Board.super_.prototype.sendOneWireWrite">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireWrite
+        <span class="apidocSignatureSpan">(pin, device, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendOneWireWrite = function (pin, device, data) {
+  this._sendOneWireRequest(pin, ONEWIRE_WRITE_REQUEST_BIT, device, null, null, null, Array.isArray(data) ? data : [data]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendOneWireWriteAndRead" id="apidoc.element.bean-io.Board.super_.prototype.sendOneWireWriteAndRead">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendOneWireWriteAndRead
+        <span class="apidocSignatureSpan">(pin, device, data, numBytesToRead, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendOneWireWriteAndRead = function (pin, device, data, numBytesToRead, callback) {
+  var correlationId = Math.floor(Math.random() * 255);
+  var readTimeout = setTimeout(function() {
+    callback(new Error("1-Wire device read timeout - are you running ConfigurableFirmata?"));
+  }, 5000);
+  this._sendOneWireRequest(pin, ONEWIRE_WRITE_REQUEST_BIT | ONEWIRE_READ_REQUEST_BIT, device, numBytesToRead, correlationId, null
+, Array.isArray(data) ? data : [data], "1-wire-read-reply-" + correlationId, function(data) {
+    clearTimeout(readTimeout);
+
+    callback(null, data);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.sendString" id="apidoc.element.bean-io.Board.super_.prototype.sendString">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>sendString
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sendString = function (string) {
+  var bytes = new Buffer(string + "\0", "utf8");
+  var data = [];
+  data.push(START_SYSEX);
+  data.push(STRING_DATA);
+  for (var i = 0, length = bytes.length; i &lt; length; i++) {
+    data.push(bytes[i] &amp; 0x7F);
+    data.push((bytes[i] &gt;&gt; 7) &amp; 0x7F);
+  }
+  data.push(END_SYSEX);
+  this.transport.write(data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.servoConfig" id="apidoc.element.bean-io.Board.super_.prototype.servoConfig">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>servoConfig
+        <span class="apidocSignatureSpan">(pin, min, max)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">servoConfig = function (pin, min, max) {
+  // [0]  START_SYSEX  (0xF0)
+  // [1]  SERVO_CONFIG (0x70)
+  // [2]  pin number   (0-127)
+  // [3]  minPulse LSB (0-6)
+  // [4]  minPulse MSB (7-13)
+  // [5]  maxPulse LSB (0-6)
+  // [6]  maxPulse MSB (7-13)
+  // [7]  END_SYSEX    (0xF7)
+
+  var data = [
+    START_SYSEX,
+    SERVO_CONFIG,
+    pin,
+    min &amp; 0x7F,
+    (min &gt;&gt; 7) &amp; 0x7F,
+    max &amp; 0x7F,
+    (max &gt;&gt; 7) &amp; 0x7F,
+    END_SYSEX
+  ];
+
+  this.pins[pin].mode = this.MODES.SERVO;
+  this.transport.write(new Buffer(data));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.servoWrite" id="apidoc.element.bean-io.Board.super_.prototype.servoWrite">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>servoWrite
+        <span class="apidocSignatureSpan">(pin, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">servoWrite = function (pin, value) {
+  // Values less than 544 will be treated as angles in degrees
+  // (valid values in microseconds are handled as microseconds)
+  this.analogWrite.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.setSamplingInterval" id="apidoc.element.bean-io.Board.super_.prototype.setSamplingInterval">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>setSamplingInterval
+        <span class="apidocSignatureSpan">(interval)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setSamplingInterval = function (interval) {
+  var safeint = interval &lt; 10 ? 10 : (interval &gt; 65535 ? 65535 : interval); // constrained
+  this.transport.write(new Buffer([START_SYSEX, SAMPLING_INTERVAL, (safeint &amp; 0xFF), ((safeint &gt;&gt; 8) &amp; 0xFF), END_SYSEX]));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.stepperConfig" id="apidoc.element.bean-io.Board.super_.prototype.stepperConfig">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>stepperConfig
+        <span class="apidocSignatureSpan">(deviceNum, type, stepsPerRev, dirOrMotor1Pin, stepOrMotor2Pin, motor3Pin, motor4Pin)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stepperConfig = function (deviceNum, type, stepsPerRev, dirOrMotor1Pin, stepOrMotor2Pin, motor3Pin, motor4Pin) {
+  var data = [
+    START_SYSEX,
+    STEPPER,
+    0x00, // STEPPER_CONFIG from firmware
+    deviceNum,
+    type,
+    stepsPerRev &amp; 0x7F, (stepsPerRev &gt;&gt; 7) &amp; 0x7F,
+    dirOrMotor1Pin,
+    stepOrMotor2Pin
+  ];
+  if (type === this.STEPPER.TYPE.FOUR_WIRE) {
+    data.push(motor3Pin, motor4Pin);
+  }
+  data.push(END_SYSEX);
+  this.transport.write(new Buffer(data));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bean-io.Board.super_.prototype.stepperStep" id="apidoc.element.bean-io.Board.super_.prototype.stepperStep">
+        function <span class="apidocSignatureSpan">bean-io.Board.super_.prototype.</span>stepperStep
+        <span class="apidocSignatureSpan">(deviceNum, direction, steps, speed, accel, decel, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stepperStep = function (deviceNum, direction, steps, speed, accel, decel, callback) {
+  if (typeof accel === "function") {
+    callback = accel;
+    accel = 0;
+    decel = 0;
+  }
+
+  var data = [
+    START_SYSEX,
+    STEPPER,
+    0x01, // STEPPER_STEP from firmware
+    deviceNum,
+    direction, // one of this.STEPPER.DIRECTION.*
+    steps &amp; 0x7F, (steps &gt;&gt; 7) &amp; 0x7F, (steps &gt;&gt; 14) &amp; 0x7f,
+    speed &amp; 0x7F, (speed &gt;&gt; 7) &amp; 0x7F
+  ];
+  if (accel &gt; 0 || decel &gt; 0) {
+    data.push(
+      accel &amp; 0x7F, (accel &gt;&gt; 7) &amp; 0x7F,
+      decel &amp; 0x7F, (decel &gt;&gt; 7) &amp; 0x7F
+    );
+  }
+  data.push(END_SYSEX);
+  this.transport.write(new Buffer(data));
+  this.once("stepper-done-" + deviceNum, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
